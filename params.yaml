@@ -1,2 +1,8 @@
-
-key: val
+AUGMENTATION: True
+BATCH_SIZE: 16
+IMAGE_SIZE: [224,224,3] # as per VGG model   (VGG- Visual Geometry Group)
+LEARNING_RATE: 0.01
+EPOCHS: 1
+INCLUDE_TOP: False
+WEIGHTS: imagenet
+CLASSES: 2
