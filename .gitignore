@@ -135,3 +135,4 @@ dmypy.json
 *.h5
 
 artifacts/prepare_callbacks/tensorboard_log_dir/tb_logs_at_2022-09-29-13-22-27/train/events.out.tfevents.1664437955.DESKTOP-RGPFDH5.9764.0.v2
+artifacts/prepare_callbacks/tensorboard_log_dir/tb_logs_at_2022-09-29-13-22-27/validation/events.out.tfevents.1664445437.DESKTOP-RGPFDH5.9764.1.v2
