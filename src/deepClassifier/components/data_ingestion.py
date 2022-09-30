@@ -20,7 +20,7 @@ class DataIngestion:
             )
             logger.info(f"{filename} downloaded with following info : \n{headers}")
         else:
-            logger.info(f"{filename} already exists")
+            logger.info(f"File  already exists")
 
     def _get_updated_list_of_files(self, list_of_files):
         return [
