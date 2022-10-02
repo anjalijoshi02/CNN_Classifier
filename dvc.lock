@@ -38,3 +38,36 @@ stages:
       md5: dbff703429adc4dfaf82415003024381.dir
       size: 118053368
       nfiles: 2
+  training:
+    cmd: python src/deepClassifier/pipeline/st_03_training.py
+    deps:
+    - path: artifacts/data_ingestion/PetImages
+      md5: 3a5cf86541f22c236620ce5b952ad684.dir
+      size: 848866410
+      nfiles: 24998
+    - path: artifacts/prepare_base_model
+      md5: dbff703429adc4dfaf82415003024381.dir
+      size: 118053368
+      nfiles: 2
+    - path: configs/config.yaml
+      md5: 1268443d059a04500ab4ad41be0805f4
+      size: 831
+    - path: src/deepClassifier/components/prepare_callbacks.py
+      md5: ba26a4581b8a32d2d4ac77c535e44e10
+      size: 979
+    - path: src/deepClassifier/pipeline/st_03_training.py
+      md5: 8efa218bc97ecdc8cc17e5a7ac16801e
+      size: 990
+    params:
+      params.yaml:
+        AUGMENTATION: true
+        BATCH_SIZE: 16
+        EPOCHS: 1
+        IMAGE_SIZE:
+        - 224
+        - 224
+        - 3
+    outs:
+    - path: artifacts/training/model.h5
+      md5: 17e35c97a228825dc99d905be0bd29f1
+      size: 59135136
